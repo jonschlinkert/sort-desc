@@ -1,7 +1,7 @@
 {
   "name": "sort-desc",
   "description": "Sort array elements in descending order.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/sort-desc",
   "author": {
     "name": "Jon Schlinkert",

@@ -11,7 +11,7 @@ var assert = require('assert');
 var sortDesc = require('./');
 
 describe('sort object', function () {
-  it('should sort keys in ascending order.', function () {
+  it('should sort keys in descending order.', function () {
     var actual = (['d', 'c', 'b', 'a']).sort(sortDesc);
     assert.deepEqual(actual, ['a', 'b', 'c', 'd'] );
   });
