@@ -1,18 +1,16 @@
-/*!
- * sort-desc <https://github.com/jonschlinkert/sort-desc>
- *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
- * Licensed under the MIT License
- */
-
 'use strict';
 
+/* deps: mocha */
 var assert = require('assert');
 var sortDesc = require('./');
 
-describe('sort object', function () {
-  it('should sort keys in descending order.', function () {
-    var actual = (['d', 'c', 'b', 'a']).sort(sortDesc);
-    assert.deepEqual(actual, ['a', 'b', 'c', 'd'] );
+describe('sort descending', function () {
+  it('should sort elements in descending order.', function () {
+    assert.deepEqual(['d', 'c', 'b', 'a'].sort(sortDesc), ['d', 'c', 'b', 'a']);
+    assert.deepEqual(['g', 'z', 'a', 'x'].sort(sortDesc), ['z', 'x', 'g', 'a']);
+    assert.deepEqual(['z', 'z', 'a', 'z'].sort(sortDesc), ['z', 'z', 'z', 'a']);
+    assert.deepEqual(['zz', 'z', 'aa', 'a'].sort(sortDesc), ['zz', 'z', 'aa', 'a']);
+    assert.deepEqual(['aba', 'aab', 'acc', 'abb', 'aabb'].sort(sortDesc), ['acc', 'abb', 'aba', 'aabb', 'aab']);
   });
 });
+
