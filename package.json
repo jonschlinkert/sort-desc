@@ -1,48 +1,43 @@
 {
   "name": "sort-desc",
   "description": "Sort array elements in descending order.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/sort-desc",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/sort-desc.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/sort-desc",
   "bugs": {
     "url": "https://github.com/jonschlinkert/sort-desc/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/sort-desc/blob/master/LICENSE-MIT"
-    }
-  ],
-  "keywords": [
-    "array",
-    "arr",
-    "desc",
-    "descending",
-    "function",
-    "keys",
-    "key",
-    "order",
-    "ordered",
-    "obj",
-    "object",
-    "sort"
+  "license": "MIT",
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "*",
-    "verb": "^0.2.15"
+    "mocha": "*"
+  },
+  "keywords": [
+    "array",
+    "desc",
+    "descend",
+    "descending",
+    "element",
+    "elements",
+    "order",
+    "ordered",
+    "sort",
+    "sorted",
+    "sorting"
+  ],
+  "verb": {
+    "related": {
+      "list": ["sort-asc", "sort-desc", "sort-object"]
+    }
   }
 }
